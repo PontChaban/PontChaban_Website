@@ -1,0 +1,12 @@
+{
+  "globals": {
+    "title":        "Pont Chaban Delmas",
+    "url":          "http://pontchabandelmas.fr",
+    "authorname":   "Steve Robert",
+    "authorurl":    "http://steverobert.fr",
+    "appstore":    "http://apple.co/1dugImG",
+    "service": {
+        "analytics": "UA-29747350-2"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+
+@import "bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap.scss"
+@import "bower_components/hover/scss/hover.scss"
+
+@import variables
+@import button
+
+body
+    background-color: white
+    color: $color-blue
+    text-align: center
+    a
+        color: $color-blue
+        &:visited
+            color: $color-blue
+        &:link
+            text-decoration: none
+
+.container-narrow
+    max-width: 400px
+    margin: 0 auto
+
+
+#home
+    height: 100vh
+    max-width: 400px
+    margin: 0 auto
+    @media (max-width:640px)
+        padding-left: 15px
+        padding-right: 15px
+    display: table
+    .content
+        position: relative
+        display: table-cell
+        vertical-align: middle
+        padding: 20px 0
+        p
+            padding: 0.15em 1em 1em 1em
+            font-size: 16px
+        .logo
+            background: url("../images/icon.png") no-repeat
+            background-size: cover
+            width: 200px
+            height: 200px
+            border-radius: 25px
+            margin: 0 auto
+            box-shadow: 1px 1px 4px $color-blue
+        .footer
+            margin-top: 20px
+            .wrapper-twitter
+                margin-top: 10px
+            .copyright
+                margin-top: 2em
+                color: $color-blue
+                opacity: 0.8
+                p
+                    font-size: 13px
+                a:hover
+                    color: $color-blue
+                    text-decoration: none
+                    border-bottom: 1px dotted $color-blue

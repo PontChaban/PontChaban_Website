@@ -1,0 +1,26 @@
+doctype
+html
+    head
+        title= "Pont Chaban Delmas"
+        
+        meta(charset='utf-8')
+        meta(name='description', content='Les fermetures du pont Chaban Delmas sur votre mobile en temps réel.')
+        meta(name='keywords', content='pont chaban delmas, pont chaban, steve robert, chaban delmas, steve, robert, bordeaux')
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1')
+        
+        link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
+        link(rel="stylesheet" href="css/main.css")
+        link(rel="stylesheet", href="https://fontastic.s3.amazonaws.com/LhQe2gvCMSwuUsEv7qj5u5/icons.css")
+    body
+        != yield
+        
+    script(type='text/javascript').
+        window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"))
+    
+    script(type='text/javascript').
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', '#{ service.analytics }', 'auto');
+        ga('send', 'pageview');
